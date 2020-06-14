@@ -34,11 +34,16 @@
 // 
 // Related Topics 哈希表 双指针 字符串 Sliding Window
 
-package leetcode.editor.cn;
+package leetcode.editor.en;
 
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author LYleonard
+ * @date 2020/06/14
+ * @description 非重复最长子串
+ */
 public class LongestSubstringWithoutRepeatingCharacters{
   public static void main(String[] args) {
 	   Solution solution = new LongestSubstringWithoutRepeatingCharacters().new Solution();
