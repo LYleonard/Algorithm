@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Created by LYleonard on 2020/5/25
+# Created by LYleonard on 2020/6/14
 # Describe: Longest Substring Without Repeating Characters
 
 class Solution(object):
@@ -13,11 +13,11 @@ class Solution(object):
         dicts = {}
         for index,value in enumerate(s):
             if value in dicts:
-                sum = dicts[value] + 1
-                if sum > start:
-                    start = sum
-            num = index - start + 1
-            if num > ans:
-                ans = num
+                guard = dicts[value] + 1
+                if guard > start:
+                    start = guard
+            tmp_ans = index - start + 1
+            if tmp_ans > ans:
+                ans = tmp_ans
             dicts[value] = index
         return ans
