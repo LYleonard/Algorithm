@@ -1,0 +1,10 @@
+.idea/
+*.iml
+*.xml
+*.json
+# Compiled class file
+*.class
+
+# Log file
+*.log
+venv/
